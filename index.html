@@ -20,8 +20,8 @@
 
 <script type="text/javascript" id="script">
 /*EDIT THE FOLLOWING LINES */
-// The Google Fusion Tables numeric table ID; find by selecting File > About in the original table
-var tableid = 4389358;
+// The Google Fusion Table ID; find by selecting File > About in the original table
+var tableid = 1TtLFs5SKrGvCm7W2cbyDTRXMmEkhkLndtNsuto1X;
 //The column in your GFTable containing the LOCATIONS
 var location_column = 'geometry';
 // Use the coordinates below for Connecticut center, zoom level, legend width
@@ -30,29 +30,34 @@ var zoom = 9;
 var legend_width = '300px';
 // Insert title for each legend, and use min and max values for each bucket and associated color from regular GFT map
 var columns = {
-  'Percent of Housing Stock at 8-30g (2010)': [
+  'Percent Minority Oct 1998': [
     {
           'min': 0,
-          'max': 10,
-          'color': '#b4a7d6'
-        },
-        {
-          'min': 10,
           'max': 20,
-          'color': '#8e7cc3'
+          'color': '#d9d2e9'
         },
         {
           'min': 20,
-          'max': 30,
+          'max': 40,
+          'color': '#b4a7d6'
+        },
+        {
+          'min': 40,
+          'max': 60,
+          'color': '#8e7cc3'
+        },
+        {
+          'min': 60,
+          'max': 80,
           'color': '#674ea7'
         },
         {
-          'min': 30,
-          'max': 40,
+          'min': 80,
+          'max': 100,
           'color': '#351c75'
         }
   ],
-  'Median Sales Price of Single-Family Homes (2009 GLYr)': [
+  'Avg Pct Goal CMT Grade 4 1998-2000': [
     {
       'min': 100000,
       'max': 200000,
